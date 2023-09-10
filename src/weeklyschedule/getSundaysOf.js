@@ -1,7 +1,7 @@
 import { nextSunday, previousSunday } from "date-fns";
 
 const getSundaysOf = (nWeeks) => {
-  if (typeof nWeeks != "number") return;
+  if (typeof nWeeks != "number") return null;
   const result = [];
   const isTodaySunday = () => new Date().getDay() == 0;
 
